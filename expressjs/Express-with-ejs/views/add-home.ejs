@@ -1,0 +1,22 @@
+<%- include("partials/start")%>
+<%- include("partials/header")%>
+<div class="container flex justify-center items-center  h-screen  bg-slate-600 ">
+<form action="/add-home" method="post" class="w-[30%] h-105 rounded-2xl shadow-2xl flex flex-col p-6 gap-1  bg-white">
+    <label for="per-night" class="font-mono text-2xl capitalize ">Price per night</label>
+    <input type="number" id="per-night" name="perNight" class="border-3 p-1" required>
+    <label for="location" class="font-mono text-2xl">Location</label>
+    <input type="text" id="location" name="location"class="border-3 p-1" required>
+    <label for="rating" class="font-mono text-2xl" >Rating</label>
+    <input type="number" id="rating" name="rating" class="border-3 p-1" required>
+    <label for="image" class="font-mono text-2xl" >Image Url</label>
+    <input 
+      class="border-3 p-1 "
+       type="text" 
+       name="image"
+       id="image-upload" 
+     />
+        
+    <button type="submit" class="font-mono  text-2xl w-30  p-2 m-3 rounded-xl border-2 border-slate-500 flex justify-center items-center bg-slate-400 ">Submit</button>
+</form>
+</div>
+<%- include("partials/end")%>
